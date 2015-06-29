@@ -31,7 +31,7 @@ module.exports = function(server) {
                     socket.emit('ready', gameId, 'white');
                     opp_socket.emit('ready', gameId, 'black');
                 } else {
-                    // ожидает
+                    // РѕР¶РёРґР°РЅРёРµ
                     socket.emit('wait');
                 }
             });
