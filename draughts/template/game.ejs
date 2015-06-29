@@ -1,0 +1,16 @@
+<% layout('layout/page') -%>
+<% block('title', "Игра") -%>
+
+<script src="vendor/bower_components/socket.io-client/socket.io.js"></script>
+
+<div id="room">
+    <span id="status">Игра не начата</span><br>
+    <button id="start-game">Начать игру</button>
+    <h3 id="color"></h3>
+    <h4 id="turn"></h4>
+    <table id="board-table">
+        <tbody></tbody>
+    </table>
+</div>
+
+<script type="text/javascript" src="js/draughts.js"></script>
